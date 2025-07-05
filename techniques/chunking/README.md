@@ -19,15 +19,15 @@ The goal of chunking is to preserve the semantic meaning and context while creat
 
 ## What are the different types of chunking?
 
-### Length-based chunking
+### [Length-based chunking](./length-based-chunking.ipynb)
 
 The most simplest technique to split the document into chunks by a certain **fixed length**. This is naive but keeps the chunks consistent. But the texts are split in the middle of a word if the word is longer than the chunk size. We can use the `CharacterTextSplitter` class from `langchain_text_splitter` to split the document into chunks.
 
-### Text-based chunking
+### [Text-based chunking](./text-based-chunking.ipynb)
 
 This is similar to Length-based chunking but instead of splitting by a certain number of characters, it splits by a certain number of words. This is more accurate than Length-based chunking. But the chunks are not split in a meaningful way. We can use the `RecursiveCharacterTextSplitter` class from `langchain_text_splitter` to split the document into chunks.
 
-### Semantic-based chunking
+### [Semantic-based chunking](./semantic-based-chunking.ipynb)
 
 This is a more advanced technique that splits the document into chunks based on the semantic meaning of the text. This is more accurate than Length-based chunking and Text-based chunking. This chunker works by determining when to "break" apart sentences. This is done by looking for differences in embeddings between any two sentences. When that difference is past some threshold, then they are split.
 There are a few ways to determine what that threshold is, which are controlled by the `breakpoint_threshold_type` kwarg.
@@ -39,7 +39,7 @@ There are a few ways to determine what that threshold is, which are controlled b
 
 We can use the `SemanticChunker` class from `langchain_experimental.text_splitter` to split the document into chunks.
 
-### Document-based chunking
+### [Document-based chunking](./document-based-chunking.ipynb)
 
 This is a more advanced technique that splits the document into chunks based on the file type and the syntax of the document. This is useful when the document is a codebase. We can use the `MarkdownTextSplitter` class from `langchain_text_splitter` to split the markdown document into chunks.
 
