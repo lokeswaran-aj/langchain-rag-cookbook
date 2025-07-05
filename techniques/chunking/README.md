@@ -38,3 +38,11 @@ There are a few ways to determine what that threshold is, which are controlled b
 - `gradient`: In this method, the gradient of distance is used to split chunks along with the percentile method. This method is useful when chunks are highly correlated with each other or specific to a domain. The default value is 95.0.
 
 We can use the `SemanticChunker` class from `langchain_experimental.text_splitter` to split the document into chunks.
+
+### Document-based chunking
+
+This is a more advanced technique that splits the document into chunks based on the file type and the syntax of the document. This is useful when the document is a codebase. We can use the `MarkdownTextSplitter` class from `langchain_text_splitter` to split the markdown document into chunks.
+
+We can also use the `PythonCodeTextSplitter` class from `langchain_text_splitter` to split the python code into chunks.
+
+We can also use the `RecursiveCharacterTextSplitter.from_language` with the `Language` enum from `langchain_text_splitter` to split the javascript code into chunks based on the language of the document.
