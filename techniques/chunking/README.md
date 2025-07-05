@@ -22,3 +22,7 @@ The goal of chunking is to preserve the semantic meaning and context while creat
 ### Length-based chunking
 
 The most simplest technique to split the document into chunks by a certain **fixed length**. This is naive but keeps the chunks consistent. But the texts are split in the middle of a word if the word is longer than the chunk size.
+
+### Text-based chunking
+
+This is similar to Length-based chunking but instead of splitting by a certain number of characters, it splits by a certain number of words. This is more accurate than Length-based chunking. But the chunks are not split in a meaningful way.
