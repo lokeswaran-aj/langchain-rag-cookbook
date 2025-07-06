@@ -13,3 +13,7 @@ Retrieval systems should ideally handle a wide range of queries from simple and 
 ### [Multi-query](./multi-query-rewriting.ipynb)
 
 Rewrite the query into multiple queries so that the retriever can retrieve the more unique and relevant documents. This technique is useful when you want to ensure high recall in retrieval by providing multiple phrasings of a question. This helps capture relevant documents that may match different ways of expressing the same information need.
+
+### [Decomposition](./decomposition-query-rewriting.ipynb)
+
+When a question can be broken down into smaller subproblems. Decompose a question into a set of subproblems / questions, which can either be solved sequentially (use the answer from first + retrieval to answer the second) or in parallel (consolidate each answer into final answer).
