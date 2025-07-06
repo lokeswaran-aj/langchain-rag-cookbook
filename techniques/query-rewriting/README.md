@@ -17,3 +17,7 @@ Rewrite the query into multiple queries so that the retriever can retrieve the m
 ### [Decomposition](./decomposition-query-rewriting.ipynb)
 
 When a question can be broken down into smaller subproblems. Decompose a question into a set of subproblems / questions, which can either be solved sequentially (use the answer from first + retrieval to answer the second) or in parallel (consolidate each answer into final answer).
+
+### [Step-back](./step-back-query-rewriting.ipynb)
+
+This technique is used to generate broader and more general queries that can help the retriever retrieve more relevant documents. This technique is used when a higher-level conceptual understanding is required.
