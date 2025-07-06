@@ -11,3 +11,6 @@ There are separate notebooks for each technique.
 
 2. [Query Rewriting](./techniques/query-rewriting/README.md)
    Query rewriting is the process of rewriting the query to make it more specific and relevant to the document. There are different techniques to rewrite the query like [multi-query](./techniques/query-rewriting/multi-query-rewriting.ipynb), [decomposition](./techniques/query-rewriting/decomposition-query-rewriting.ipynb) and [step-back](./techniques/query-rewriting/step-back-query-rewriting.ipynb)
+
+3. [Embedding](./techniques/embedding/README.md)
+   Embedding is the process of converting text into a vector of numbers. This is useful for similarity search. There are different techniques to embed the text like [HyDE](./techniques/embedding/hype-embedding.ipynb) and [HyPE](./techniques/embedding/hype-embedding.ipynb).
