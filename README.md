@@ -1,4 +1,4 @@
-# rag-cookbook-langchain
+# LangChain RAG Cookbook
 
 This is a collection of notebooks that I used to learn about RAG with LangChain.
 
