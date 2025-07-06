@@ -1,0 +1,31 @@
+# Document Indexing
+
+Document indexing is a crucial technique in information retrieval that organizes documents for efficient search and retrieval.
+
+
+## Why it is useful?
+
+- Enables fast and efficient document retrieval
+- Reduces search time complexity
+- Allows for complex queries and filtering
+- Supports scalable information retrieval systems
+
+
+## Common Indexing Techniques
+
+### Inverted Index
+- Maps terms to documents containing them
+- Stores frequency and position information
+- Optimized for full-text search
+
+
+### Vector Space Model
+- Represents documents as vectors
+- Enables similarity comparisons
+- Used with embedding-based search
+
+
+### Document-Term Matrix
+- Sparse matrix representation
+- Rows are documents, columns are terms
+- Foundation for many IR algorithms

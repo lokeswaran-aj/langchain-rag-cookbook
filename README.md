@@ -14,3 +14,6 @@ There are separate notebooks for each technique.
 
 3. [Embedding](./techniques/embedding/README.md)
    Embedding is the process of converting text into a vector of numbers. This is useful for similarity search. There are different techniques to embed the text like [HyDE](./techniques/embedding/hype-embedding.ipynb) and [HyPE](./techniques/embedding/hype-embedding.ipynb).
+
+4. [Indexing](./techniques/indexing/README.md)
+   Indexing is the process of loading, chunking, embedding and indexing of documents into a vector database. There are different techniques to index the documents like [Indexing API](./techniques/indexing/indexing-api.ipynb).
