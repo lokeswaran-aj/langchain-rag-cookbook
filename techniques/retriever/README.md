@@ -15,3 +15,7 @@ BM25 Retriever is a retriever that uses the Okapi BM25 ranking algorithm to retr
 ### [Fusion Retriever or Hybrid Retriever](./fusion-retriever.ipynb)
 
 Fusion Retriever combines multiple retrieval methods to improve search quality. It typically merges results from vector similarity search (which captures semantic meaning) with keyword-based BM25 retrieval (which excels at exact term matching). By combining these complementary approaches, Fusion Retriever can provide more robust and relevant document retrieval than either method alone. Finally, the results are reranked and passed to the LLM to get the final answer.
+
+### [Reranker Retriever](./reranker-retriever.ipynb)
+
+Reranker Retriever is a retriever that uses a reranker algorithm(FlashRank in this example) to rerank the results from the vector store retriever. Contextual Compression Retriever is a wrapper around the vector store retriever and the reranker. It returns top n results from the vector retriever.
