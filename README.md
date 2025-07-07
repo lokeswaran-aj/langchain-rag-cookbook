@@ -17,3 +17,6 @@ There are separate notebooks for each technique.
 
 4. [Indexing](./techniques/indexing/README.md)
    Indexing is the process of loading, chunking, embedding and indexing of documents into a vector database. There are different techniques to index the documents like [Indexing API](./techniques/indexing/indexing-api.ipynb).
+
+5. [Retriever](./techniques/retriever/README.md)
+   Retriever is a component that retrieves relevant documents from a vector store. There are different types of retrievers like [Vector Store Retriever](./techniques/retriever/vector-store-retriever.ipynb), [BM25 Retriever](./techniques/retriever/bm25-retriever.ipynb), [Fusion Retriever or Hybrid Retriever](./techniques/retriever/fusion-retriever.ipynb) and [Reranker Retriever](./techniques/retriever/reranker-retriever.ipynb).
