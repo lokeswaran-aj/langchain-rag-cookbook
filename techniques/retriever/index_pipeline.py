@@ -1,21 +1,25 @@
 import os
 
 from langchain.indexes import SQLRecordManager, index
-from langchain_community.document_loaders import WebBaseLoader
+from langchain_community.document_loaders import PyPDFLoader
 from langchain_community.vectorstores import PGVector
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_openai import OpenAIEmbeddings
 from rich import print
 
-documents = WebBaseLoader("https://leerob.com/agents", verify_ssl=False).load()
-print("documents", len(documents))
+# Get the current directory path
+current_dir = os.path.dirname(os.path.abspath(__file__))
+pdf_path = os.path.join(current_dir, "aiaun.pdf")
+
+documents = PyPDFLoader(pdf_path).load()
+print("documents", len(documents), documents[0])
 embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
 text_splitter = SemanticChunker(
     embeddings=embeddings, breakpoint_threshold_type="interquartile"
 )
 
 chunks = text_splitter.split_documents(documents)
-print("chunks", len(chunks))
+print("chunks", len(chunks), chunks[0])
 COLLECTION_NAME = "my_collection"
 DATABASE_URL = os.getenv("DATABASE_URL")
 
