@@ -20,3 +20,12 @@ There are separate notebooks for each technique.
 
 5. [Retriever](./techniques/retriever/README.md)
    Retriever is a component that retrieves relevant documents from a vector store. There are different types of retrievers like [Vector Store Retriever](./techniques/retriever/vector-store-retriever.ipynb), [BM25 Retriever](./techniques/retriever/bm25-retriever.ipynb), [Fusion Retriever or Hybrid Retriever](./techniques/retriever/fusion-retriever.ipynb) and [Reranker Retriever](./techniques/retriever/reranker-retriever.ipynb).
+
+## RAG with LangGraph
+
+> You can run these RAGs with [langgraph CLI](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#langgraph-cli). Install the CLI with `pip install -U "langgraph-cli[inmem]"` and run `langgraph dev` to start the RAG.
+
+1. [Naive RAG](./rag/naive_rag.py)
+   Naive RAG is a simple RAG pipeline which has just 2 components:
+   - Retriever Tool: A retriever that uses a vector store to retrieve relevant documents from a vector store.
+   - Agent Node: A chat model that can answer user's question using the retriever tool.
