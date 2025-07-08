@@ -23,6 +23,8 @@ There are separate notebooks for each technique.
 
 ## RAG with LangGraph
 
+> I have created the ingestion pipeline in [ingestion.py](./rag/ingestion.py) that loads and embeds the [Vercel AI SDK's docs](https://ai-sdk.dev/docs/foundations) into a vector store.
+
 > You can run these RAGs with [langgraph CLI](https://langchain-ai.github.io/langgraph/cloud/reference/cli/#langgraph-cli). Install the CLI with `pip install -U "langgraph-cli[inmem]"` and run `langgraph dev` to start the RAG.
 
 1. [Naive RAG](./rag/naive_rag.py)
