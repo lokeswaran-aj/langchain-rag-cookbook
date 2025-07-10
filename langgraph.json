@@ -1,7 +1,8 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "naive_rag": "./rag/naive_rag.py:graph"
+    "naive_rag": "./rag/naive_rag.py:graph",
+    "agentic_rag": "./rag/agentic_rag.py:graph"
   },
   "env": "./.env"
 }

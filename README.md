@@ -29,5 +29,10 @@ There are separate notebooks for each technique.
 
 1. [Naive RAG](./rag/naive_rag.py)
    Naive RAG is a simple RAG pipeline which has just 2 components:
+
    - Retriever Tool: A retriever that uses a vector store to retrieve relevant documents from a vector store.
    - Agent Node: A chat model that can answer user's question using the retriever tool.
+
+2. [Agentic RAG](./rag/agentic_rag.py)
+
+   Agentic RAG is an advanced RAG pipeline that implements intelligent document grading and question rewriting for improved retrieval accuracy. Unlike naive RAG, it uses a graph-based approach with conditional routing to handle irrelevant documents and optimize queries.
